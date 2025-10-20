@@ -12,7 +12,54 @@ const ChatList = () => {
         </div>
         <img src={addMode ? "./minus.png" : "./plus.png"} alt="Add chat" className="add" onClick={()=>setAddMode((prev) => !prev)} />
       </div>
-      
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
+      <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+            <span>Hanine Baccar</span>
+            <p>hello</p>
+
+        </div>
+      </div>
     </div>
   );
 };

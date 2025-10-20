@@ -1,5 +1,8 @@
 .chatList {
   padding: 20px;
+  overflow: scroll;
+  scrollbar-width: thin;            
+  scrollbar-color: black transparent;
 }
 
 .chatList .search {
@@ -43,5 +46,44 @@
 }
 
 .chatList .add:hover {
-  background-color: rgba(17, 25, 40, 0.7);
+  background-color: rgba(21, 30, 48, 0.7);
+}
+
+.chatList .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(62, 54, 104, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.chatList .item:hover {
+  background-color: rgba(45, 56, 77, 0.3);
+}
+
+.chatList .item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chatList .item .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chatList .item .texts span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.chatList .item .texts p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0;
 }
