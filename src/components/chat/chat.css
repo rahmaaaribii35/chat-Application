@@ -110,3 +110,60 @@
   color: #fff;
   cursor: pointer;
 }
+
+.chat .bottom .icons {
+  display: flex;
+  gap: 10px;
+}
+.chat .bottom .icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* white icons */
+  transition: transform 0.2s;
+}
+
+.chat .bottom .icons img:hover {
+  transform: scale(1.1);
+}
+
+.chat .bottom input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.chat .bottom .emoji {
+  cursor: pointer;
+}
+
+.chat .bottom .emoji img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.chat .bottom .emoji img:hover {
+  transform: scale(1.1);
+}
+
+.chat .bottom .sendButton {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: none;
+  background-color: #3a3a3a;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.chat .bottom .sendButton:hover {
+  background-color: #505050;
+  transform: scale(1.05);
+}
