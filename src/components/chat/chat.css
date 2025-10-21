@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #121212; /* dark background */
+  background-color: #1c1c1c; /* dark background */
   border-left: 1px solid rgba(255,255,255,0.1);
   border-right: 1px solid rgba(255,255,255,0.1);
   color: #fff;
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  background-color: #1f1f1f;
+  background-color: #2e2e2e;
 }
 
 .chat .top .user {
@@ -89,7 +89,7 @@
   align-items: center;
   gap: 10px;
   border-top: 1px solid rgba(255,255,255,0.1);
-  background-color: #1f1f1f;
+  background-color: #1b1b1b;
 }
 
 .chat .bottom input {
@@ -133,7 +133,7 @@
   border-radius: 25px;
   border: none;
   outline: none;
-  background-color: #2a2a2a;
+  background-color: #515050;
   color: #fff;
   font-size: 14px;
 }
@@ -167,3 +167,21 @@
   background-color: #505050;
   transform: scale(1.05);
 }
+
+
+/* === Emoji Picker Styling === */
+.chat .bottom .emoji {
+  position: relative; /* allows absolute positioning of the picker inside */
+}
+
+.chat .bottom .emoji .EmojiPickerReact {
+  position: absolute !important;
+  bottom: 45px; /* adjust so it floats above the input */
+  right: 0;
+  z-index: 2000;
+  box-shadow: 0 4px 12px rgba(81, 80, 80, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
